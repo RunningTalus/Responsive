@@ -50,3 +50,27 @@ nav {
 nav.is-expanded {
   height:235px;
 }
+
+
+@media(min-width:700px){
+  #logo {
+    width:200px;
+  }
+  #menu {
+    display: none;
+  }
+  nav, nav.is-expanded {
+    height:60px;
+    width:500px;
+    float: right;
+  }
+  ul {
+    width: 500px;
+  }
+  li{
+    width:25%;
+  }
+  article {
+    float:left;
+  }
+}
