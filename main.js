@@ -1,3 +1,8 @@
-$("#menu").change(function onChange() {
-  window.location = $(this).find("option:selected").val();
+$('#menu').click(function(){
+  $('nav').toggleClass('is-expanded');
+});
+
+$('.has-subnav a').click(function(){
+  $(this).parent().toggleClass('is-expanded');
+  $('nav').toggleClass('is-subnav-expanded');
 });
