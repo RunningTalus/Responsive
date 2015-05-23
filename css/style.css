@@ -1,0 +1,17 @@
+.parent{
+  width:1000px;
+  height:20px;
+  outline:1px solid green;
+}
+.twenty-percent{
+  width:200px;
+  height:20px;
+  float:left;
+  background:red;
+}
+.eighty-percent{
+  width:800px;
+  height:20px;
+  float:left;
+  background:blue;
+}
