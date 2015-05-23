@@ -1,11 +1,16 @@
+* {
+  box-sizing:border-box; /* Universal selector that applies to all elements */
+}
+
 .grid{
-  width:25%;
+  /*box-sizing:border-box;*/
+  width:20%;
   height:0px;  /* See padding-bottom below */
   padding-left:1.5678%;
   padding-right:1.5678%;
   margin-left:1.5678%;
   margin-right:1.5678%;
-  padding-bottom:25%; /* When height:0px; is set you can use padding-bottom: %; to maintain aspect ratio and set a heigfht that's relative to the width of an element.  */
+  padding-bottom:10%; /* When height:0px; is set you can use padding-bottom: %; to maintain aspect ratio and set a heigfht that's relative to the width of an element.  */
   float:left;
   outline:5px solid red; /* so the grid is visible */
 }
