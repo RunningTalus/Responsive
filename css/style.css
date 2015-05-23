@@ -1,17 +1,11 @@
-.parent{
-  width:800px;
-  height:20px;
-  outline:1px solid green;
-}
-.twenty-percent{
-  width:20%;
-  height:20px;
+.grid{
+  width:25%;
+  height:0px;  /* See padding-bottom below */
+  padding-left:1.5678%;
+  padding-right:1.5678%;
+  margin-left:1.5678%;
+  margin-right:1.5678%;
+  padding-bottom:25%; /* When height:0px; is set you can use padding-bottom: %; to maintain aspect ratio and set a heigfht that's relative to the width of an element.  */
   float:left;
-  background:red;
-}
-.eighty-percent{
-  width:80%;
-  height:20px;
-  float:left;
-  background:blue;
+  outline:5px solid red; /* so the grid is visible */
 }
