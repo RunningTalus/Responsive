@@ -95,9 +95,25 @@
 .info-active .wrapper{left:50%;}
 .nav-active .wrapper{right:50%;}
 
+section[role="main"]{
+  padding:70px 10px 0;
+}
+
+figure{
+  width: 100%
+}
+figure img{
+  max-width: 100%;
+  height: auto;
+}
 
 /* Media query for screens with a min-width of 720 pixels. */
 @media (min-width: 720px) {
+
+  .wrapper {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
 
   /* Hide the navigation */
   #navTray{display: none;}
@@ -111,5 +127,11 @@
   #topHeader .logo{
     left: 70px;
     margin-left:0;
+  }
+
+  #infoTray {
+    left: 308px;
+    width: 25px;
+    height: 25px;
   }
 }
