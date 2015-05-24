@@ -100,7 +100,7 @@
 @media (min-width: 720px) {
 
   /* Hide the navigation */
-  #navtray{display: none;}
+  #navTray{display: none;}
 
   #topHeader .right-tray{
     width: auto;
@@ -108,7 +108,7 @@
     right: 0;
   }
 
-  #topheader .logo{
+  #topHeader .logo{
     left: 70px;
     margin-left:0;
   }
