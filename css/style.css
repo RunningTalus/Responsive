@@ -3,7 +3,7 @@
   max-width:960px;
   /* for desktop view */
   margin:0 auto;
-  outline: 1px solid salmon;
+  outline: 1px solid chartreuse;
 
 }
 
@@ -17,19 +17,26 @@
   height:20px;
   float:left;
   margin:1%;
-  outline:1px solid cornflowerblue;
+  outline:1px solid hotpink;
 }
 
 /* Set the width of a CSS rule that takes the space of one column in the grid.  */
 /* This is a mobile grid. */
-.m-grid-1{
-  width:23%;
-}
+.m-grid-1{width:23%;}
+.m-grid-2{width:48%;}
+.m-gird-3{width:73%;}
+.m-grid-4{width:98%;}
+
 
 /* Set the width of the CSS rule for one column using a media query that targets devices with a minimum width of 960 pixels.  */
 /* This is a desktop grid. */
 @media (min-width:960px){
   .d-grid-1{width:10.5%;}
+  .d-grid-2{width:23%;}
+  .d-grid-3{width:35.5%;}
+  .d-grid-4{width:48%;}
+  .d-grid-5{width:60.5%;}
+  .d-grid-6{width:73%;}
+  .d-grid-7{width:85.5%;}
+  .d-grid-8{width:98%;}
 }
-
-/*  This will result in desktop layout with one row of 8 columns on desktop & 2 rows of four columns on mobile.  */
