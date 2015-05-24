@@ -3,7 +3,7 @@
   max-width:960px;
   /* for desktop view */
   margin:0 auto;
-  outline: 1px solid chartreuse;
+  outline: 1px solid orange;
 
 }
 
@@ -40,3 +40,55 @@
   .d-grid-7{width:85.5%;}
   .d-grid-8{width:98%;}
 }
+
+/* Use CSS transitions to animate the canvas.   */
+.wrapper{
+  width:100%;
+  position:relative;
+
+  -webkit-transition:all 1.0s ease-in-out;
+  -moz-transition:all 1.0s ease-in-out;
+  -o-transition:all 1.0s ease-in-out;
+  transition:all 1.0s ease-in-out;
+}
+
+#infoTray, #navTray{
+  position:absolute;
+  top:0;
+  width:50px;
+  height:50px;
+  outline:1px solid cyan;
+}
+
+#infoTray{
+  left:0;
+}
+#navTray{
+  right:0;
+}
+
+.logo{
+
+  color:#fff;
+  position:absolute;
+  width:300px;
+  height:50px;
+  left:50%;
+  margin-left: -150px;
+  background:#333;
+  text-align: center;
+}
+
+#topHeader .left-tray, #topHeader .right-tray{
+  position:absolute;
+  width:200px;
+}
+
+/* Use negative positioning to hide off-canvas elements.   */
+#topHeader .left-tray{left:-50%;}
+#topHeader .right-tray{right:-50%;}
+
+
+/* Use CSS to support states in our jQuery */
+.info-active .wrapper{left:50%;}
+.nav-active .wrapper{right:50%;}
