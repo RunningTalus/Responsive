@@ -43,6 +43,8 @@
 
 /* Use CSS transitions to animate the canvas.   */
 .wrapper{
+  max-width: 1024px;
+  margin: 0 auto;
   width:100%;
   position:relative;
 
@@ -92,3 +94,22 @@
 /* Use CSS to support states in our jQuery */
 .info-active .wrapper{left:50%;}
 .nav-active .wrapper{right:50%;}
+
+
+/* Media query for screens with a min-width of 720 pixels. */
+@media (min-width: 720px) {
+
+  /* Hide the navigation */
+  #navtray{display: none;}
+
+  #topHeader .right-tray{
+    width: auto;
+    padding:10px;
+    right: 0;
+  }
+
+  #topheader .logo{
+    left: 70px;
+    margin-left:0;
+  }
+}

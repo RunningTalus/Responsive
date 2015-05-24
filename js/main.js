@@ -5,3 +5,5 @@ $("#infoTray").click(function(){
 $("#navTray").click(function(){
   $("body").toggleClass("nav-active");
 });
+
+console.log(document.body.clientWidth);
