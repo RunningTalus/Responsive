@@ -6,7 +6,10 @@ body {
   background: url("../images/tile.png")
 }
 
-h1, h2, h3, .logo {
+h1,
+h2,
+h3,
+.logo {
 font-family: "Cambo", serif;
 }
 
@@ -14,7 +17,12 @@ p {
   font-family: "Nunito", sans-serif;
 }
 
-h1, h2, h3, p {
+h1,
+h2,
+h3,
+p,
+ul,
+li{
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
 }
 
@@ -23,20 +31,24 @@ a {
 }
 
 /* GRID STYLES */
+
 .row{
   width: 100%;
   max-width: 960px;
   /* for desktop view */
   margin: 0 auto;
-  outline: 1px solid orange;
+  outline: 1px solid darkred;
 }
 
 /* clearfix set against the .row class for convenience */
 /* Apply the clearfix hack to the .row class to prevent collapsing margins caused by contending float elements */
-.row:before, .row:after {
+
+.row:before,
+.row:after {
   content: " ";
   display: table;
 }
+
 .row:after {
   clear: both;
 }
@@ -45,7 +57,7 @@ a {
   height: 20px;
   float: left;
   margin: 1%;
-  outline: 1px solid blue;
+  outline: 1px solid hotpink;
 }
 
 /* Set the width of a CSS rule that takes the space of one column in the grid.  */
@@ -98,10 +110,11 @@ a {
   height: 50px;
 
   background: #efebe3;
-  box-shadow: 0 0 5px #000;
+  box-shadow: 0 0 5px #000; /* box-shadow: [x distance] [y distance] [blur] [color] */
 }
 
-#infoTray, #navTray {
+#infoTray,
+#navTray {
   position: absolute;
   top: 0;
   width: 50px;
@@ -139,22 +152,24 @@ a {
 }
 
 /* Use negative positioning to hide off-canvas elements.   */
+
 #topHeader .left-tray { left: -50%;}
 #topHeader .right-tray { right: -50%;}
 
 /* Use CSS to support states in our jQuery */
+
 .info-active .wrapper { left: 50%;}
 .nav-active .wrapper { right: 50%;}
 
 /* Role has value in accessibility.  High specificity as a CSS selector as it uses both attribute (section) and property (role) selector. */
+
 section[role="main"] {
   padding: 70px 10px 0;
 }
 /* Padding on top, offsets the header which is position:absolute, and is removed from the DOM order. */
 /* Elements positioned absolutely are always positioned relative to their parent element AND according to assigned top, bottom, left, and right coordinates. */
 
-
-figure{
+figure {
   width: 100%
 }
 
@@ -164,6 +179,7 @@ figure img{
 }
 
 /* Media query for screens with a min-width of 720 pixels. */
+
 @media (min-width: 720px) {
 
   .wrapper {
@@ -191,7 +207,7 @@ figure img{
     height: 25px;
   }
 
-  #logo{ left: 0;}
+  #logo { left: 0;}
 }
 
 .article-data {
@@ -202,6 +218,41 @@ figure img{
   background: #ccc;
 }
 
-.article-data time{
+.article-data time {
   display: block;
+}
+
+/* Logo and Wrapper */
+
+.logo-wrapper {
+  position: relative;
+  width: 100px;
+  left: 50%;
+  margin-left: -50px;
+}
+
+#logo {
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  height: 0px;
+  padding-bottom: 44%;
+  font-size: 0px;
+  background: url(../images/logo.png) no-repeat;
+  background-size: cover; /* Scales the image to entirely cover the size of the related object. */
+}
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
