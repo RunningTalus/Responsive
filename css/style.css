@@ -261,3 +261,15 @@ relative to the width of a parent element. This trick comes in handy with VIDEO,
   width: 100%; /* width: 100% fills the parent object completely */
   height: 100%;
 }
+
+.btn {
+  font-size: 2.2em;
+  color: #2e3034;
+  text-align: center;
+}
+
+.star {
+  float: right;
+  width: 100px;
+  height: 100px;
+}
