@@ -127,7 +127,7 @@ a {
 
 #infoTray {
   left: 0;
-  background-image: url(../images/info.png);
+  /*background-image: url(../images/info.png);*/
 }
 
 #navTray {
@@ -242,7 +242,8 @@ relative to the width of a parent element. This trick comes in handy with VIDEO,
   height: 0; /* Step 4: Set height: 0.  This leverages padding-bottom to size the object on the page.  */
   padding-bottom: 44%; /* Step 5: Set padding-bottom to determine height base off of .logo-wrapper {width: 100px}. */
   font-size: 0px;
-  background: url(../images/logo.png) no-repeat;
+  background-image: url(../images/logo.png) no-repeat;
+  background-image: url(../images/logo.svg);
   background-size: cover; /* Scales the image to entirely cover the size of the related object. */
 }
 
