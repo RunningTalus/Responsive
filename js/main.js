@@ -1,3 +1,5 @@
-if(Modernizr.opacity) {
-  alert('Opacity is supported.');
+if (Modernizr.touch) {
+  alert ("Touch is supported.");
+  } else {
+    alert("Touch is not supported.");
 }
