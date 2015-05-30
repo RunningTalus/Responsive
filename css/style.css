@@ -263,14 +263,8 @@ relative to the width of a parent element. This trick comes in handy with VIDEO,
   height: 100%;
 }
 
-.btn {
-  font-size: 2.2em;
-  color: #2e3034;
-  text-align: center;
-}
-
-.star {
+object {
+  height: 400px;
+  width: 400px;
   float: right;
-  width: 100px;
-  height: 100px;
 }
