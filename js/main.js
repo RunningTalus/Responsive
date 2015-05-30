@@ -1,5 +1,5 @@
-if (Modernizr.touch) {
-  alert ("Touch is supported.");
-  } else {
-    alert("Touch is not supported.");
-}
+Modernizr.load({
+  test: Modernizr.touch,
+  yep: './css/touch.css',
+  nope: './css/no-touch.css'
+});
