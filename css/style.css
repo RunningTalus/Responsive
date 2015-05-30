@@ -269,10 +269,10 @@ object {
   float: right;
 }
 
-.svg .star-svg img {
+.svg #star-svg img {
   display: none;
 }
 
-.no-svg .star-svg object {
+.no-svg #star-svg object {
   display: none;
 }
