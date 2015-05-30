@@ -268,3 +268,11 @@ object {
   width: 400px;
   float: right;
 }
+
+.svg .star-svg img {
+  display: none;
+}
+
+.no-svg .star-svg object {
+  display: none;
+}
